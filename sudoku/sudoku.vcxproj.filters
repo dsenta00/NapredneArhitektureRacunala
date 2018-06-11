@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="SudokuCuda.cu">
+      <Filter>Threading</Filter>
+    </CudaCompile>
+    <CudaCompile Include="MatrixCuda.cu">
+      <Filter>CudaSudoku</Filter>
+    </CudaCompile>
+    <CudaCompile Include="AbstractSudokuCuda.cu">
+      <Filter>CudaSudoku</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Threading">
+      <UniqueIdentifier>{dc796911-5ee6-415f-a70b-f239f3b57b00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NormalSudoku">
+      <UniqueIdentifier>{e2f32b01-8db6-47a4-a2d4-764fe1cfd6dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CudaSudoku">
+      <UniqueIdentifier>{4e2c91ba-a243-4aa1-ba2a-ad6e5c013430}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SudokuC.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="SudokuCpp.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>NormalSudoku</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>NormalSudoku</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractSudoku.cpp">
+      <Filter>NormalSudoku</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SudokuC.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="SudokuCpp.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="SudokuCuda.cuh">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixCuda.h">
+      <Filter>CudaSudoku</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>NormalSudoku</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>NormalSudoku</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractSudoku.h">
+      <Filter>NormalSudoku</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractSudokuCuda.h">
+      <Filter>CudaSudoku</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
